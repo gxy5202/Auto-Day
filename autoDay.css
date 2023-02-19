@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+}
+
+#auto-day-box {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 240px;
+    padding: 8px;
+}
+
+button {
+    background-image: linear-gradient(
+        to right top,
+        #3a9efd,
+        #00b8ff,
+        #00cef7,
+        #00dfd4,
+        #12eba7
+    );
+    height: 30px;
+    border: none;
+    color: #fff;
+    width: 100%;
+}
+
+#auto-input-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.auto-input-div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 6px;
+}
+
+#auto-product-url {
+    display: flex;
+}
+#auto-pre-content .input-title {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.auto-input-div .input-type,
+.auto-input-div select {
+    width: 100%;
+}
+
+.auto-input-div .input-title {
+    display: block;
+    width: 100%;
+    margin-bottom: 3px;
+    font-weight: bold;
+}
+
+.author-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#author {
+    width: 25px;
+    height: 25px;
+    margin: 5px 0;
+    border: 1px solid #00dfd4;
+    border-radius: 50%;
+    cursor: pointer;
+    background: url(./icons/logo.png) no-repeat;
+    background-size: contain;
+    text-align: center;
+}

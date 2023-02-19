@@ -1,0 +1,101 @@
+<!--
+ * @description: 
+ * @project: UEC11
+ * @Author: Gouxinyu
+ * @Identification: SF3569
+ * @Date: 2020-01-22 15:30:21
+ -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <link rel="stylesheet" href="autoDay.css" />
+        <style type="text/css">
+            .box {
+                width: 300px;
+                height: 500px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="auto-day-box">
+            <div id="auto-input-box">
+                <div class="author-box">
+                    <div id="author" title="Author: Gomi"></div>
+                </div>
+                <div id="auto-pre-content" class="auto-input-div">
+                    <span class="input-title">预设选项</span>
+                </div>
+                <div class="auto-input-div">
+                    <span class="input-title">工时地址：</span>
+                    <div id="auto-product-url">
+                        <input
+                            type="radio"
+                            name="url"
+                            style="margin-left: 0"
+                            value="http://10.0.8.26:9001/jobhoursmanage/static/index"
+                        /><span>内网</span>
+                        <input
+                            type="radio"
+                            name="url"
+                            value="http://171.221.203.127:30037/jobhoursmanage/static/index.html#/"
+                        /><span>外网</span>
+                    </div>
+                </div>
+                <div class="auto-input-div">
+                    <span class="input-title">产品名称：</span>
+                    <!-- <input id="auto-product-name" list="products"/> -->
+                    <select id="auto-product-name" width="150"></select>
+                </div>
+                <div class="auto-input-div">
+                    <span class="input-title">版本号：</span>
+                    <input
+                        id="auto-product-version"
+                        list="versions"
+                        class="input-type"
+                    />
+                    <datalist id="versions"></datalist>
+                </div>
+                <div class="auto-input-div">
+                    <span class="input-title">工作范畴：</span>
+                    <select id="auto-product-range"></select>
+                    <!-- <input id="auto-product-range" type="text" placeholder="工作范畴" /> -->
+                </div>
+                <div class="auto-input-div">
+                    <span class="input-title">工作内容：</span>
+                    <input
+                        id="auto-product-content"
+                        type="text"
+                        class="input-type"
+                    />
+                </div>
+                <div class="auto-input-div">
+                    <span class="input-title">实际工时(可选)：</span>
+                    <input
+                        id="auto-product-workTime"
+                        type="text"
+                        class="input-type"
+                    />
+                </div>
+                <div class="auto-input-div">
+                    <span class="input-title">提醒时间：</span>
+                    <input
+                        id="auto-product-tips"
+                        type="time"
+                        class="input-type"
+                    />
+                </div>
+                <div class="auto-input-div">
+                    <input id="auto-product-submit" type="checkbox" />
+                    <span>是否自动提交</span>
+                </div>
+            </div>
+            <button id="auto-finish">跳转到工时页面</button>
+        </div>
+        <script src="ue.js"></script>
+    </body>
+</html>
